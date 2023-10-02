@@ -1,4 +1,3 @@
-// unitconverterstyle.js
 import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
@@ -10,6 +9,7 @@ export default StyleSheet.create({
   text: {
     fontSize: 18,
     marginBottom: 10,
+    color: 'black',
   },
   input: {
     borderWidth: 1,
@@ -19,10 +19,11 @@ export default StyleSheet.create({
     marginBottom: 20,
     width: 200,
     height: 40,
+    color: 'black',
   },
   button: {
-    backgroundColor: 'blue',
-    color: 'white',
+    backgroundColor: 'white',
+    color: 'black',
     padding: 10,
     borderRadius: 5,
   },

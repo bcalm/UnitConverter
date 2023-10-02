@@ -9,6 +9,7 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 18,
     marginBottom: 10,
+    color: 'black',
   },
   input: {
     borderWidth: 1,
@@ -18,10 +19,11 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     width: 200,
     height: 40,
+    color: 'black'
   },
   button: {
-    backgroundColor: 'blue',
-    color: 'white',
+    backgroundColor: 'white',
+    color: 'black',
     padding: 10,
     borderRadius: 5,
   },

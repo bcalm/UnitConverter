@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button } from 'react-native';
 import styles from '../styles/CurrencyConverterStyles';
-import { convertUSDToEUR, convertEURToUSD } from '../hooks/CurrencyConverter';
+import { convertUSDToINR, convertINRToUSD } from '../hooks/CurrencyConverter';
 
 function CurrencyConverterScreen() {
   const [usd, setUSD] = useState('');
-  const [eur, setEUR] = useState('');
+  const [inr, setINR] = useState('');
 
   const handleUSDChange = (text) => {
     setUSD(text);
-    const convertedEUR = convertUSDToEUR(parseFloat(text));
-    setEUR(convertedEUR);
+    const convertedINR = convertUSDToINR(parseFloat(text));
+    setINR(convertedINR);
   };
 
-  const handleEURChange = (text) => {
-    setEUR(text);
-    const convertedUSD = convertEURToUSD(parseFloat(text));
+  const handleINRChange = (text) => {
+    setINR(text);
+    const convertedUSD = convertINRToUSD(parseFloat(text));
     setUSD(convertedUSD);
   };
 
@@ -27,22 +27,24 @@ function CurrencyConverterScreen() {
         <TextInput
           style={styles.input}
           placeholder="Enter USD"
+          placeholderTextColor="black"
           keyboardType="numeric"
           value={usd}
           onChangeText={handleUSDChange}
         />
       </View>
       <View>
-        <Text style={styles.text}>EUR:</Text>
+        <Text style={styles.text}>INR:</Text>
         <TextInput
           style={styles.input}
-          placeholder="Enter EUR"
+          placeholderTextColor="black"
+          placeholder="Enter INR"
           keyboardType="numeric"
-          value={eur}
-          onChangeText={handleEURChange}
+          value={inr}
+          onChangeText={handleINRChange}
         />
       </View>
-      <Button title="Clear" onPress={() => { setUSD(''); setEUR(''); }} style={styles.button} />
+      <Button title="Clear" onPress={() => { setUSD(''); setINR(''); }} style={styles.button} />
     </View>
   );
 }

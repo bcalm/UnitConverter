@@ -5,7 +5,7 @@ import styles from '../styles/HomeScreenStyles';
 function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
-      <Text style={styles.heading}>Welcome to the Unit Converter</Text>
+      <Text style={styles.heading}>Converter App</Text>
       <Button
         title="Unit Converter"
         onPress={() => navigation.navigate('UnitConverter')}

@@ -29,6 +29,7 @@ function UnitConverterScreen() {
           placeholder="Enter kilometers"
           keyboardType="numeric"
           value={kilometers}
+          placeholderTextColor="black"
           onChangeText={handleKilometersChange}
         />
       </View>
@@ -38,6 +39,7 @@ function UnitConverterScreen() {
           style={styles.input}
           placeholder="Enter miles"
           keyboardType="numeric"
+          placeholderTextColor="black"
           value={miles}
           onChangeText={handleMilesChange}
         />

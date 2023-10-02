@@ -9,7 +9,11 @@ const styles = StyleSheet.create({
   heading: {
     fontSize: 24,
     marginBottom: 20,
+    color: 'black',
   },
+  button: {
+    padding: 5,
+  }
 });
 
 export default styles;
